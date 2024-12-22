@@ -16,6 +16,13 @@
 		BEB12D9C2CF351DB00B0A7B9 /* PressedAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB12D9B2CF351DB00B0A7B9 /* PressedAnimationTests.swift */; };
 		BEB12DA62CF351DB00B0A7B9 /* PressedAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB12DA52CF351DB00B0A7B9 /* PressedAnimationUITests.swift */; };
 		BEB12DA82CF351DB00B0A7B9 /* PressedAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB12DA72CF351DB00B0A7B9 /* PressedAnimationUITestsLaunchTests.swift */; };
+		BEB12DB62CF351F100B0A7B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BEB12DB52CF351F100B0A7B9 /* SnapKit */; };
+		BEB12DB92CF3522500B0A7B9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BEB12DB82CF3522500B0A7B9 /* RxCocoa */; };
+		BEB12DBB2CF3522500B0A7B9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = BEB12DBA2CF3522500B0A7B9 /* RxRelay */; };
+		BEB12DBD2CF3522500B0A7B9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BEB12DBC2CF3522500B0A7B9 /* RxSwift */; };
+		BEB12DBF2CF3525400B0A7B9 /* PressedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB12DBE2CF3525400B0A7B9 /* PressedCell.swift */; };
+		BEB12DC12CF352B000B0A7B9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB12DC02CF352B000B0A7B9 /* Model.swift */; };
+		BEB12DC32CF3640A00B0A7B9 /* PressedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB12DC22CF3640A00B0A7B9 /* PressedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,9 @@
 		BEB12DA12CF351DB00B0A7B9 /* PressedAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PressedAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB12DA52CF351DB00B0A7B9 /* PressedAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressedAnimationUITests.swift; sourceTree = "<group>"; };
 		BEB12DA72CF351DB00B0A7B9 /* PressedAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressedAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BEB12DBE2CF3525400B0A7B9 /* PressedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressedCell.swift; sourceTree = "<group>"; };
+		BEB12DC02CF352B000B0A7B9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		BEB12DC22CF3640A00B0A7B9 /* PressedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB12DBB2CF3522500B0A7B9 /* RxRelay in Frameworks */,
+				BEB12DB92CF3522500B0A7B9 /* RxCocoa in Frameworks */,
+				BEB12DBD2CF3522500B0A7B9 /* RxSwift in Frameworks */,
+				BEB12DB62CF351F100B0A7B9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +116,13 @@
 				BEB12D842CF351D900B0A7B9 /* AppDelegate.swift */,
 				BEB12D862CF351D900B0A7B9 /* SceneDelegate.swift */,
 				BEB12D882CF351D900B0A7B9 /* ViewController.swift */,
+				BEB12DC02CF352B000B0A7B9 /* Model.swift */,
 				BEB12D8A2CF351D900B0A7B9 /* Main.storyboard */,
 				BEB12D8D2CF351DA00B0A7B9 /* Assets.xcassets */,
 				BEB12D8F2CF351DA00B0A7B9 /* LaunchScreen.storyboard */,
 				BEB12D922CF351DA00B0A7B9 /* Info.plist */,
+				BEB12DBE2CF3525400B0A7B9 /* PressedCell.swift */,
+				BEB12DC22CF3640A00B0A7B9 /* PressedButton.swift */,
 			);
 			path = PressedAnimation;
 			sourceTree = "<group>";
@@ -143,6 +160,12 @@
 			dependencies = (
 			);
 			name = PressedAnimation;
+			packageProductDependencies = (
+				BEB12DB52CF351F100B0A7B9 /* SnapKit */,
+				BEB12DB82CF3522500B0A7B9 /* RxCocoa */,
+				BEB12DBA2CF3522500B0A7B9 /* RxRelay */,
+				BEB12DBC2CF3522500B0A7B9 /* RxSwift */,
+			);
 			productName = PressedAnimation;
 			productReference = BEB12D812CF351D900B0A7B9 /* PressedAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +238,10 @@
 				Base,
 			);
 			mainGroup = BEB12D782CF351D900B0A7B9;
+			packageReferences = (
+				BEB12DB42CF351F100B0A7B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				BEB12DB72CF3522500B0A7B9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = BEB12D822CF351D900B0A7B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB12DC32CF3640A00B0A7B9 /* PressedButton.swift in Sources */,
+				BEB12DC12CF352B000B0A7B9 /* Model.swift in Sources */,
 				BEB12D892CF351D900B0A7B9 /* ViewController.swift in Sources */,
+				BEB12DBF2CF3525400B0A7B9 /* PressedCell.swift in Sources */,
 				BEB12D852CF351D900B0A7B9 /* AppDelegate.swift in Sources */,
 				BEB12D872CF351D900B0A7B9 /* SceneDelegate.swift in Sources */,
 			);
@@ -607,6 +637,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEB12DB42CF351F100B0A7B9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		BEB12DB72CF3522500B0A7B9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEB12DB52CF351F100B0A7B9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEB12DB42CF351F100B0A7B9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		BEB12DB82CF3522500B0A7B9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEB12DB72CF3522500B0A7B9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BEB12DBA2CF3522500B0A7B9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEB12DB72CF3522500B0A7B9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		BEB12DBC2CF3522500B0A7B9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEB12DB72CF3522500B0A7B9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BEB12D792CF351D900B0A7B9 /* Project object */;
 }
